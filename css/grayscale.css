@@ -425,13 +425,13 @@ input#volumeslider{ width: 80px;}*/
 
 .container-4{
   overflow: hidden;
-  width: 450px;
+  width: 350px;
   vertical-align: middle;
   white-space: nowrap;
 }
 
 .container-4 input#search{
-  width: 450px;
+  width: 350px;
   height: 50px;
   background: #2b303b;
   border: none;
