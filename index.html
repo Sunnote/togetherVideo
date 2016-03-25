@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en"><head><link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700"><style type="text/css">.gm-style .gm-style-cc span,.gm-style .gm-style-cc a,.gm-style .gm-style-mtc div{font-size:10px}</style><style type="text/css">@media print {  .gm-style .gmnoprint, .gmnoprint {    display:none  }}@media screen {  .gm-style .gmnoscreen, .gmnoscreen {    display:none  }}</style><style type="text/css">.gm-style{font-family:Roboto,Arial,sans-serif;font-size:11px;font-weight:400;text-decoration:none}.gm-style img{max-width:none}</style><link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700"><style type="text/css">.gm-style .gm-style-cc span,.gm-style .gm-style-cc a,.gm-style .gm-style-mtc div{font-size:10px}</style><style type="text/css">@media print {  .gm-style .gmnoprint, .gmnoprint {    display:none  }}@media screen {  .gm-style .gmnoscreen, .gmnoscreen {    display:none  }}</style><style type="text/css">.gm-style{font-family:Roboto,Arial,sans-serif;font-size:11px;font-weight:400;text-decoration:none}.gm-style img{max-width:none}</style><link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700"><style type="text/css">.gm-style .gm-style-cc span,.gm-style .gm-style-cc a,.gm-style .gm-style-mtc div{font-size:10px}</style><style type="text/css">@media print {  .gm-style .gmnoprint, .gmnoprint {    display:none  }}@media screen {  .gm-style .gmnoscreen, .gmnoscreen {    display:none  }}</style><style type="text/css">.gm-style{font-family:Roboto,Arial,sans-serif;font-size:11px;font-weight:400;text-decoration:none}.gm-style img{max-width:none}</style>
+<html lang="en">
+<head>
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,6 +20,22 @@
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+    <!--for video section-->
+
+    <link rel="stylesheet" href="http://css-tricks.github.com/AnythingSlider/css/theme-metallic.css">
+
+    <!--for search box-->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+
+
+    <script src="js/video.js"></script>
+    <script src="js/grayscale.js"></script>
+
+    
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -48,6 +65,8 @@
 <script type="text/javascript" src="http://s.sharethis.com/loader.js"></script>
 
 
+<!--add video slider to show a special "test" tag -->
+
 
 
 </head>
@@ -64,25 +83,37 @@
                 <a class="navbar-brand page-scroll" href="#page-top">
                     <i class="fa fa-play-circle"></i>  <span class="light">www.</span> Together.Video
                 </a>
+
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="navbar-collapse navbar-right navbar-main-collapse collapse" aria-expanded="false" style="height: 1px;">
-                <ul class="nav navbar-nav">
-                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li class="">
-                        <a class="page-scroll" href="#about">About</a>
-                    </li>
-                    <li class="active">
-                        <a class="page-scroll" href="#download">Download</a>
-                    </li>
-                    <li class="">
-                        <a class="page-scroll" href="#contact">Contribute</a>
-                    </li>
-                </ul>
+                    
+                    <div class="box" align="right">
+                            <div class="container-4">
+                            <input type="search" id="search" placeholder="Search..." />
+                            <button class="icon"><i class="fa fa-search"></i></button>
+                        </div>
+                <!--
+                    <ul class="nav navbar-nav">
+                       
+                      
+
+                        <li class="hidden">
+                            <a href="#page-top"></a>
+                        </li>
+                        <li class="">
+                            <a class="page-scroll" href="#about">About</a>
+                        </li>
+                        <li class="active">
+                            <a class="page-scroll" href="#download">Download</a>
+                        </li>
+                        <li class="">
+                            <a class="page-scroll" href="#contact">Contribute</a>
+                        </li>
+                    </ul>
+                -->
+                </div>
             </div>
             <!-- /.navbar-collapse -->
         </div>
@@ -95,7 +126,42 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2">
-                        <h1 class="brand-heading">TOGETHER VIDEO</h1>
+                       
+
+                        <!--Search for keyword-->
+
+
+
+           
+
+                 
+                    <br>
+                    <br>
+                    <!--Search result-->
+
+                        <div class="search-item"></div>
+
+   <br>
+   <br>                   
+
+    <div class = "videoSection">
+
+
+        <div id="video_player_box">
+             <video width="550" height="340" controls="controls">
+            <source src="http://da3rvkrz2h4l8.cloudfront.net/2016-03-20-15-46-02/197NJgux.mp4">
+            <source src="http://da3rvkrz2h4l8.cloudfront.net/2016-03-20-15-46-02/197NJgux.mp4">
+            <source src="http://da3rvkrz2h4l8.cloudfront.net/2016-03-20-15-46-02/197NJgux.mp4">
+            Your browser does not support the video tag. But you could include an iframe/embeded video here.
+        </video>
+        </div>
+
+
+
+   </div>
+
+<br>
+<br>
 
                         <p class="intro-text">Wikipedia-like Service <br>for Social Editing of Video Stories</p>
                         <a href="#about" class="btn btn-circle page-scroll">
@@ -118,6 +184,10 @@
             </div>
         </div>
     </section>
+
+    <section>
+
+
 
     <!-- Download Section -->
     <section id="download" class="content-section text-center">
@@ -186,6 +256,8 @@
         </div>
     </section>
 
+
+<!--Video Slider Secttion-->
 
 
           <!-- Contribute Image Section -->
@@ -262,13 +334,50 @@
 <br>
                     <a href="https://play.google.com/store/apps/details?id=com.spirority.viiz.tool" class="btn btn-default btn-lg">Back This Project</a>
                 
-               
+<br>
+<br>
+<br>
                
             </div>
         </div>
     </section>
 
+<!-- Project Update - Video Section-->
 
+<section class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>Project Update</h2>
+                <p>We are building a customized video player for you to cut copy and paste videos</p>
+
+                <br>
+                <br>
+
+
+
+    <div class = "videoSection">
+
+
+        <div id="video_player_box">
+             <video width="520" height="340" controls="controls">
+            <source src="http://css-tricks.github.com/AnythingSlider/demos/video/movie.ogg" type="video/ogg">
+            <source src="http://css-tricks.github.com/AnythingSlider/demos/video/movie.mp4" type="video/mp4">
+            <source src="http://css-tricks.github.com/AnythingSlider/demos/video/movie.webm" type="video/webm">
+            Your browser does not support the video tag. But you could include an iframe/embeded video here.
+        </video>
+        </div>
+
+
+
+   </div>
+
+
+
+                
+            </div>
+        </div>
+    </section>
+<!--new slider section-->
 
 
 
@@ -300,6 +409,12 @@
     var options={ "publisher": "ff37f7cb-617a-472e-bf29-3ccac10f6118", "logo": { "visible": false, "url": "", "img": "//sd.sharethis.com/disc/images/demo_logo.png", "height": 45}, "ad": { "visible": false, "openDelay": "5", "closeDelay": "0"}, "livestream": { "domain": "", "type": "sharethis"}, "ticker": { "visible": false, "domain": "", "title": "", "type": "sharethis"}, "facebook": { "visible": false, "profile": "sharethis"}, "fblike": { "visible": false, "url": ""}, "twitter": { "visible": false, "user": "sharethis"}, "twfollow": { "visible": false}, "custom": [{ "visible": false, "title": "Custom 1", "url": "", "img": "", "popup": false, "popupCustom": { "width": 300, "height": 250}}, { "visible": false, "title": "Custom 2", "url": "", "img": "", "popup": false, "popupCustom": { "width": 300, "height": 250}}, { "visible": false, "title": "Custom 3", "url": "", "img": "", "popup": false, "popupCustom": { "width": 300, "height": 250}}], "chicklets": { "items": ["facebook", "twitter", "linkedin", "pinterest", "whatsapp", "email"]}};
     var st_bar_widget = new sharethis.widgets.sharebar(options);
     </script>
+
+
+
+<!--add video slider-->
+
+
 
 
 </body></html>

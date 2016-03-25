@@ -414,6 +414,110 @@ body {
     background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;
 }
 
+#videoSection{
+    background-color: black;
+}
+
+/* Video Samples Section */
+
+div#video_player_box{ width:550px; background:#000; margin:0px auto;}
+div#video_controls_bar{ background: #333; padding:10px; color:#CCC; font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;}
+button#playpausebtn{
+    background:url(../img/play.jpg);
+    border:none;
+    width:16px;
+    height:18px;
+    cursor:pointer;
+    opacity:0.5;
+}
+button#playpausebtn:hover{ opacity:1; }
+input#seekslider{ width:180px; }
+input#volumeslider{ width: 80px;}
+input[type='range'] {
+    -webkit-appearance: none !important;
+    background: #000;
+    border:#666 1px solid;
+    height:4px;
+}
+input[type='range']::-webkit-slider-thumb {
+    -webkit-appearance: none !important;
+    background: #FFF;
+    height:15px;
+    width:15px;
+    border-radius:100%;
+    cursor:pointer;
+}
 
 
+/*for search box*/
+
+.container-4{
+  overflow: hidden;
+  width: 280px;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.container-4 input#search{
+  width: 280px;
+  height: 50px;
+  background: #2b303b;
+  border: none;
+  font-size: 10pt;
+  float: left;
+  color: #fff;
+  padding-left: 15px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.container-4 input#search::-webkit-input-placeholder {
+   color: #65737e;
+}
+ 
+.container-4 input#search:-moz-placeholder { /* Firefox 18- */
+   color: #65737e;  
+}
+ 
+.container-4 input#search::-moz-placeholder {  /* Firefox 19+ */
+   color: #65737e;  
+}
+ 
+.container-4 input#search:-ms-input-placeholder {  
+   color: #65737e;  
+}
+
+.container-4 button.icon{
+  -webkit-border-top-right-radius: 5px;
+  -webkit-border-bottom-right-radius: 5px;
+  -moz-border-radius-topright: 5px;
+  -moz-border-radius-bottomright: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+ 
+  border: none;
+  background: #232833;
+  height: 50px;
+  width: 50px;
+  color: #4f5b66;
+  opacity: 0;
+  font-size: 10pt;
+ 
+  -webkit-transition: all .55s ease;
+  -moz-transition: all .55s ease;
+  -ms-transition: all .55s ease;
+  -o-transition: all .55s ease;
+  transition: all .55s ease;
+}
+
+.container-4:hover button.icon, .container-4:active button.icon, .container-4:focus button.icon{
+  outline: none;
+  opacity: 1;
+  margin-left: -50px;
+}
+ 
+.container-4:hover button.icon:hover{
+  background: white;
+}
 
