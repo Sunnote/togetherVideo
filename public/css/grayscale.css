@@ -423,7 +423,7 @@ body {
 div#video_player_box{ width:550px; background:#000; margin:0px auto;}
 div#video_controls_bar{ background: #333; padding:10px; color:#CCC; font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;}
 button#playpausebtn{
-    background:url(../img/play.jpg);
+    background:url(../img/logo.jpg);
     border:none;
     width:16px;
     height:18px;
