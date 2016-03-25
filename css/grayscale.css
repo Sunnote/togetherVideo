@@ -283,11 +283,11 @@ a:focus {
     -moz-background-size:cover;
     -o-background-size:cover;
     background-size:cover;
-    background-position:center;
+    
 }
 
 
-
+/*
 #map {
     width: 100%;
     height: 200px;
@@ -308,7 +308,7 @@ a:focus {
         margin-top: 250px;
     }
 }
-
+*/
 .btn {
     border-radius: 0;
     text-transform: uppercase;
@@ -397,7 +397,7 @@ body {
    
 }
 
-.box img {
+/*.box img {
     width: 100%;
     height:400px;
     color: #fff;
@@ -409,16 +409,16 @@ body {
     background-size:cover;
     background-position:center;
 }
-
+*/
 
 
 
 /* Video Samples Section */
 
-div#video_player_box{ width:550px; background:#000; margin:0px auto;}
+/*div#video_player_box{ width:550px; background:#000; margin:0px auto;}
 div#video_controls_bar{ background: #333; padding:10px; color:#CCC;}
 input#seekslider{ width:180px; }
-input#volumeslider{ width: 80px;}
+input#volumeslider{ width: 80px;}*/
 
 
 /*for search box*/
