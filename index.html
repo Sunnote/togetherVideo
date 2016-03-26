@@ -80,6 +80,8 @@
  <!--   <div id="app"></div>  -->
 
     <script src='js/main.js'></script>
+      <script src='js/video.js'></script>
+
 
     <!-- Navigation -->
     <nav class="navbar navbar-custom navbar-fixed-top top-nav-collapse" role="navigation">
@@ -130,61 +132,127 @@
         <div class="intro-body">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
-                       
 
-                        <!--Search for keyword-->
-
-
-
-           
-
-                 
-                    <br>
-                    <br>
-                    <!--Search result-->
-
-                        <div class="search-item"></div>
-
-   <br>
-   <br>                   
-
-    <div  class "container">
-
-
-
-    <!--Test custome video player end here-->
-
-                         <div class="box" align="center">
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+                        <div class="box" align="center">
                             <div class="container-4">
                             <input type="search" id="search" placeholder="search for the video you upload from camera app" />
                             <button class="icon"><i class="fa fa-search"></i></button>
                         </div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
-                        <br>
-                        <br>
+<div class="videocontainer">
+<div class="vidcontainer">
+<video id="myvid" >
 
 
-        <div id="video_player_box">
-             <video width="100%" height="340" controls="controls">
-            <source src="http://da3rvkrz2h4l8.cloudfront.net/2016-03-20-15-46-02/197NJgux.mp4">
-            <source src="http://da3rvkrz2h4l8.cloudfront.net/2016-03-20-15-46-02/197NJgux.mp4">
-            <source src="http://da3rvkrz2h4l8.cloudfront.net/2016-03-20-15-46-02/197NJgux.mp4">
-            Your browser does not support the video tag. But you could include an iframe/embeded video here.
-        </video>
+  
+</video>
+
+        <div class="topControl">
+            <div class="progress">
+                <span class="bufferBar"></span>
+                <span class="timeBar"></span>
+            </div>
+            <div class="time">
+                <span class="current"></span> / 
+                <span class="duration"></span> 
+            </div>
         </div>
 
+<div class="controllers">
+    <button class="btnPlay" title="Play/Pause video"></button>
+    <button class="prevvid disabled" title="Previous video"><i class="fa fa-step-forward fa-rotate-180"></i></button>
+    <button class="nextvid" title="Next video"><i class="fa fa-step-forward"></i></button>
+    <button class="sound sound2 btn" title="Mute/Unmute sound"></button>
+    <div class="volume" title="Set volume">
+            <span class="volumeBar"></span>
+    </div>
+    <button class="btnFS " style="float:right" title="full screen"></button>
+    <button class="btnspeed " style="float:right" title="Video speed"><i class="fa fa-gear"></i></button>
+    <ul class="speedcnt">
+        <li class="spdx50">1.5</li>
+        <li class="spdx25">1.25</li>
+        <li class="spdx1 selected">Normal</li>
+        <li class="spdx050">0.5</li>
+    </ul>
+    <button class="btnLight lighton " style="float:right" title="on/off light"><i class="fa fa-lightbulb-o"></i></button>
+</div>
+<div class="ads">
+        <span class="closeme fa fa-close"></span>
 
+</div>
+<div class="bigplay" title="play the video"><i class="fa fa-play-circle-o"></i></div>
+<div class="loading"><i class="fa fa-spinner fa-spin"></i></div>
+    </div>
 
-   </div>
+    <div class="videolist">
+        <nav class="vids">
+            <a class="link" href="http://download.wavetlan.com/SVV/Media/HTTP/MP4/ConvertedFiles/Media-Convert/Unsupported/dw11222.mp4">Search result 1</a>
+
+            <a class="link" href="http://download.wavetlan.com/SVV/Media/HTTP/H264/Other_Media/H264_test8_voiceclip_mp4_480x320.mp4">Search result2</a>
+
+            <a class="link" href="http://download.wavetlan.com/SVV/Media/HTTP/MP4/ConvertedFiles/Media-Convert/Unsupported/test7.mp4">Search result3</a>
+
+            <a class="link" href="http://download.wavetlan.com/SVV/Media/HTTP/MP4/ConvertedFiles/Media-Convert/Unsupported/test7.mp4">Search result4</a>
+
+            <a class="link" href="http://download.wavetlan.com/SVV/Media/HTTP/H264/Other_Media/H264_test5_voice_mp4_480x360.mp4">Search result5</a>
+
+            <a class="link" href="http://download.wavetlan.com/SVV/Media/HTTP/H264/Other_Media/H264_test7_voiceclip_mp4_480x360.mp4">Search result6</a>
+
+            <a class="link" href="http://download.wavetlan.com/SVV/Media/HTTP/H264/Other_Media/H264_test8_voiceclip_mp4_480x320.mp4">Search result7</a>
+
+            <a class="link" href="http://download.wavetlan.com/SVV/Media/HTTP/MP4/ConvertedFiles/Media-Convert/Unsupported/dw11222.mp4">Search result8</a>
+
+            <a class="link" href="http://download.wavetlan.com/SVV/Media/HTTP/MP4/ConvertedFiles/Media-Convert/Unsupported/test7.mp4">Search result9</a>
+        </nav>
+    </div>
+</div>
+
 
 <br>
 <br>
+<br>
+<br>
+
+
+
+
+                    <div class="col-md-8 col-md-offset-2">
+                       
+
+                   
+
+                  
+
+                    <div  class "container">
+
+
+</div>
+
 
                         <p class="intro-text">Wikipedia-like Service <br>for Social Editing of Video Stories</p>
                         <a href="#about" class="btn btn-circle page-scroll">
                             <i class="fa fa-angle-double-down animated"></i>
                         </a>
+
+<br>
+<br>
+<br>
+<br>
+
                     </div>
                 </div>
             </div>
