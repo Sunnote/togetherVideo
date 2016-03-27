@@ -8,8 +8,8 @@ body {
     width: 100%;
     height: 100%;
     font-family: Helvetica Neue;
-    color: #fff;
-    background-color: grey;
+    color: #666;
+    background-color: white;
 }
 
 html {
@@ -45,7 +45,7 @@ p {
 }
 
 a {
-    color: #42dca3;
+    color: #2ecc71;
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
@@ -54,7 +54,7 @@ a {
 a:hover,
 a:focus {
     text-decoration: none;
-    color: #1d9b6c;
+    color: #2ecc71;
 }
 
 .light {
@@ -66,7 +66,7 @@ a:focus {
     border-bottom: 1px solid rgba(255,255,255,.3);
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    background-color: #ffe6ee;
+    background-color: white;
 }
 
 .navbar-custom .navbar-brand {
@@ -80,13 +80,13 @@ a:focus {
 .navbar-custom .navbar-brand {
     padding: 8px 6px;
     font-size: 16px;
-    color: #fff;
+    color: #2ecc71;
 }
 
 .navbar-custom .navbar-toggle {
     padding: 4px 6px;
     font-size: 16px;
-    color: #fff;
+    color: #666;
 }
 
 .navbar-custom .navbar-brand .navbar-toggle:focus,
@@ -95,7 +95,7 @@ a:focus {
 }
 
 .navbar-custom a {
-    color: #fff;
+    color: #666;
 }
 
 .navbar-custom .nav li a {
@@ -106,7 +106,7 @@ a:focus {
 
 .navbar-custom .nav li a:hover {
     outline: 0;
-    color: rgba(255,255,255,.8);
+    color: #2ecc71;
     background-color: transparent;
 }
 
@@ -125,10 +125,10 @@ a:focus {
 }
 
 .navbar-custom .nav li.active a:hover {
-    color: #fff;
+    color: #2ecc71;
 }
 
-@media(min-width:768px) {
+@media(min-width:768px) {#
     .navbar-custom {
         padding: 20px 0;
         border-bottom: 0;
@@ -142,7 +142,7 @@ a:focus {
     .navbar-custom.top-nav-collapse {
         padding: 0;
         border-bottom: 1px solid rgba(255,255,255,.3);
-        background: #ffe6ee;
+        background: white;
     }
 }
 
@@ -152,8 +152,8 @@ a:focus {
     height: auto;
     padding: 100px 0;
     text-align: center;
-    color: #fff;
-    background: url(../img/intro-bg2.jpg) no-repeat bottom center scroll;
+    color: #666;
+    background: url(../img/intro-bg3.jpg) no-repeat bottom center scroll;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -194,10 +194,10 @@ a:focus {
     height: 70px;
     margin-top: 15px;
     padding: 7px 16px;
-    border: 2px solid #fff;
+    border: 2px solid #666;
     border-radius: 100%!important;
     font-size: 40px;
-    color: #fff;
+    color: #666;
     background: 0 0;
     -webkit-transition: background .3s ease-in-out;
     -moz-transition: background .3s ease-in-out;
@@ -207,7 +207,7 @@ a:focus {
 .btn-circle:hover,
 .btn-circle:focus {
     outline: 0;
-    color: #fff;
+    color: #2ecc71;
     background: rgba(255,255,255,.1);
 }
 
@@ -273,7 +273,7 @@ a:focus {
 .contribute-section {
     width: 100%;
     height:400px;
-    color: #fff;
+    color: #666;
     background-color: #000;
     background-repeat:no-repeat;
     -webkit-background-size:cover;
@@ -317,17 +317,17 @@ a:focus {
 }
 
 .btn-default {
-    border: 1px solid #42dca3;
-    color: #ffe6ee;
+    border: 1px solid #2ecc71;
+    color: #666;
     background-color: transparent;
 }
 
 .btn-default:hover,
 .btn-default:focus {
-    border: 1px solid #42dca3;
+    border: 1px solid #2ecc71;
     outline: 0;
-    color: #000;
-    background-color: #42dca3;
+    color: #fff;
+    background-color: #2ecc71;
 }
 
 ul.banner-social-buttons {
@@ -397,7 +397,7 @@ body {
 /*.box img {
     width: 100%;
     height:400px;
-    color: #fff;
+    color: #666;
     background-color: #000;
     background-repeat:no-repeat;
     -webkit-background-size:cover;
@@ -422,39 +422,39 @@ input#volumeslider{ width: 80px;}*/
 
 .container-4{
   overflow: hidden;
-  width: 350px;
+  width: 420px;
   vertical-align: middle;
   white-space: nowrap;
 }
 
 .container-4 input#search{
-  width: 350px;
-  height: 50px;
-  background: #ffe6ee;
-  border: none;
-  font-size: 10pt;
+  width: 360px;
+  height: 60px;
+  background: #fff;
+  outline-color: #2ecc71;
+  font-size: 14pt;
   float: left;
-  color: #fff;
-  padding-left: 15px;
+  color: black;
+  padding-left: 25px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
 }
 
 .container-4 input#search::-webkit-input-placeholder {
-   color: #65737e;
+   color: #666;
 }
  
 .container-4 input#search:-moz-placeholder { /* Firefox 18- */
-   color: #65737e;  
+   color: #666;  
 }
  
 .container-4 input#search::-moz-placeholder {  /* Firefox 19+ */
-   color: #65737e;  
+   color: #666;  
 }
  
 .container-4 input#search:-ms-input-placeholder {  
-   color: #65737e;  
+   color: #666;  
 }
 
 .container-4 button.icon{
@@ -467,11 +467,11 @@ input#volumeslider{ width: 80px;}*/
  
   border: none;
   background: #232833;
-  height: 50px;
-  width: 50px;
-  color: #4f5b66;
+  height: 60px;
+  width: 60px;
+  color: #FFF;
   opacity: 0;
-  font-size: 10pt;
+  font-size: 14pt;
  
   -webkit-transition: all .55s ease;
   -moz-transition: all .55s ease;
@@ -487,13 +487,10 @@ input#volumeslider{ width: 80px;}*/
 }
  
 .container-4:hover button.icon:hover{
-  background: white;
+  background: #2ecc71;
 }
 
-#logo {
 
-    text-transform: lowercase;
-}
 
 /*video player section*/
 
@@ -519,7 +516,7 @@ input#volumeslider{ width: 80px;}*/
 
 h2.title {
     font-size: 24px;
-    color: #fff;
+    color: #666;
     font-weight: bold;
     font-family: tahoma;
     text-align: center;
@@ -547,7 +544,7 @@ h2.title {
 video {
     width: 100%;
     height: 405px;
-    color: #fff;
+    color: #666;
     text-align: center;
     font-size: 20px;
 }
@@ -555,14 +552,14 @@ video {
 .videolist {
     float: right;
     width: 25%;
-    background-color: #ff80a8;
+    background-color: #e6e6e6;
     height: 100%;
     position: relative;
 }
 
 .vids {
     margin: 5px;
-    background-color: #ff80a8;
+    background-color: #e6e6e6;
     max-height: 450px;
     min-height: 450px;
     border: 1px solid #616060;
@@ -577,11 +574,11 @@ video {
 
 }
 .vids::-webkit-scrollbar-thumb {
-    background-color: #FF8D00;
+    background-color: #2ecc71;
     border-radius: 5px;
 }
 .vids::-webkit-scrollbar-thumb:hover{
-background-color:#fff;
+background-color:#666;
 }
 .vids::-webkit-scrollbar-thumb:active{
 background-color:#ccc;
@@ -590,7 +587,7 @@ background-color:#ccc;
 
 .vids a {
     text-decoration: none;
-    color: #fff;
+    color: #666;
     font-size: 16px;
     display: block;
     border-bottom: 1px solid #616060;
@@ -603,13 +600,13 @@ background-color:#ccc;
     position: absolute;
     bottom: 0;
     height: 50px;
-    background-color: #ff80a8;
+    background-color: #e6e6e6;
     width: 100%;
 }
 
 .controllers button {
     border: 1px solid #E7E7E7;
-    background-color: #FFFFFF;
+    background-color: #e6e6e6;
     color: #777;
     height: 40px;
     width: 40px;
@@ -624,9 +621,9 @@ background-color:#ccc;
 
 .controllers button:focus {
     box-shadow: 1px 0px 7px #4C4C4C;
-    border-color: #ff8d00;
-    color: #ff8d00;
-    background-color: #4C4C4C;
+    border-color: #2ecc71;
+    color: #2ecc71;
+    background-color: #FFF;
 }
 
 .btnPlay:after {
@@ -656,7 +653,8 @@ content: "\f028";
     height: 350px;
     width: 350px;
     position: absolute;
-    background-color: grey;
+    background-color: #FFF;
+    border: 1px solid #616060;
     top: 27.5px;
     right: 40px;
     z-index: 11;
@@ -668,32 +666,32 @@ content: "\f028";
     top: 100px;
     left: 85px;
     z-index: 11;
-    color: #fff;
+    color: #666;
     font-size: 150px;
     line-height: 150px;
     text-align: center;
     cursor: pointer;
-    text-shadow: 0px 0px 15px #ff8d00;
+    text-shadow: 0px 0px 15px #2ecc71;
 }
 .closeme {
     height: 32px;
     width: 32px;
-    background-color: #fff;
+    background-color: #e6e6e6;
     top: -10px;
     right: -10px;
-    border: 1px solid #ff80a8;
+    border: 1px solid red;
     display: block;
     position: absolute;
     border-radius: 50%;
     text-align: center;
     line-height: 30px!important;
-    color: #ff80a8;
-    font-size: 25px!important;
+    color: red;
+    font-size: 10px!important;
 }
 
 .playing {
     background-color: #999;
-    border: 1px solid #ff8d00!important;
+    border: 1px solid #2ecc71!important;
     -webkit-transition: 0s;
     -o-transition: 0s;
     transition: 0s;
@@ -701,7 +699,7 @@ content: "\f028";
 .playing:after {
     content: "\f01d";
     font-family: 'FontAwesome';
-    color: #ff8d00;
+    color: #2ecc71;
     float: left;
 }
 /* PROGRESS BAR CSS */
@@ -711,7 +709,7 @@ content: "\f028";
     display: block;
     width: 100%;
     bottom: 50px;
-    background-color: #fff;
+    background-color: #666;
     z-index: 1;
 }
 /* Progress bar */
@@ -733,7 +731,7 @@ content: "\f028";
 .timeBar{
     z-index:10;
     width:0;
-    background: #ff8d00;
+    background: #2ecc71;
 }
 
 .bufferBar{
@@ -782,13 +780,13 @@ content: "\f028";
     position: absolute;
     top: 0;
     left: 0;
-    background-color: #ff8d00;
+    background-color: #2ecc71;
     z-index: 10;
 }
 
 .loading {
     width: 100%;
-    background-color: grey;
+    background-color: #e6e6e6;
     height: 405px;
     position: absolute;
     top: 0;
@@ -797,7 +795,7 @@ i.fa.fa-spinner.fa-spin {
     height: 60px;
     width: 60px;
     font-size: 60px;
-    color: #fff;
+    color: #666;
     text-shadow: 0px 0px 8px #000;
     top: 172.5px;
     left: 330px;
@@ -815,7 +813,7 @@ ul.speedcnt {
     position: absolute;
     right: 30px;
     bottom: 60px;
-    background-color: #fff;
+    background-color: #666;
     border-radius: 5px;
     list-style: none;
     -webkit-transition: 0s;
