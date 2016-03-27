@@ -66,7 +66,7 @@ a:focus {
     border-bottom: 1px solid rgba(255,255,255,.3);
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    background-color: #000;
+    background-color: #ffe6ee;
 }
 
 .navbar-custom .navbar-brand {
@@ -142,7 +142,7 @@ a:focus {
     .navbar-custom.top-nav-collapse {
         padding: 0;
         border-bottom: 1px solid rgba(255,255,255,.3);
-        background: #000;
+        background: #ffe6ee;
     }
 }
 
@@ -153,7 +153,7 @@ a:focus {
     padding: 100px 0;
     text-align: center;
     color: #fff;
-    background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;
+    background: url(../img/intro-bg2.jpg) no-repeat bottom center scroll;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -318,7 +318,7 @@ a:focus {
 
 .btn-default {
     border: 1px solid #42dca3;
-    color: #42dca3;
+    color: #ffe6ee;
     background-color: transparent;
 }
 
@@ -430,7 +430,7 @@ input#volumeslider{ width: 80px;}*/
 .container-4 input#search{
   width: 350px;
   height: 50px;
-  background: #2b303b;
+  background: #ffe6ee;
   border: none;
   font-size: 10pt;
   float: left;
@@ -555,14 +555,14 @@ video {
 .videolist {
     float: right;
     width: 25%;
-    background-color: rgb(76, 76, 76);
+    background-color: #ff80a8;
     height: 100%;
     position: relative;
 }
 
 .vids {
     margin: 5px;
-    background-color: rgb(76, 76, 76);
+    background-color: #ff80a8;
     max-height: 450px;
     min-height: 450px;
     border: 1px solid #616060;
@@ -603,7 +603,7 @@ background-color:#ccc;
     position: absolute;
     bottom: 0;
     height: 50px;
-    background-color: #fff;
+    background-color: #ff80a8;
     width: 100%;
 }
 
@@ -656,7 +656,7 @@ content: "\f028";
     height: 350px;
     width: 350px;
     position: absolute;
-    background-color: #777;
+    background-color: grey;
     top: 27.5px;
     right: 40px;
     z-index: 11;
@@ -681,13 +681,13 @@ content: "\f028";
     background-color: #fff;
     top: -10px;
     right: -10px;
-    border: 1px solid #ff8d00;
+    border: 1px solid #ff80a8;
     display: block;
     position: absolute;
     border-radius: 50%;
     text-align: center;
     line-height: 30px!important;
-    color: #ff8d00;
+    color: #ff80a8;
     font-size: 25px!important;
 }
 
@@ -788,7 +788,7 @@ content: "\f028";
 
 .loading {
     width: 100%;
-    background-color: rgba(255,141,0,0.5);
+    background-color: grey;
     height: 405px;
     position: absolute;
     top: 0;
