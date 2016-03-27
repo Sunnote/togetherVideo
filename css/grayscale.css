@@ -527,6 +527,7 @@ h2.title {
 }
 .videocontainer {
     width: 960px;
+    border: 2px solid black;
     background: #010101;
     margin: auto;
     position: relative;
@@ -552,14 +553,14 @@ video {
 .videolist {
     float: right;
     width: 25%;
-    background-color: #e6e6e6;
+    background-color: black;
     height: 100%;
     position: relative;
 }
 
 .vids {
     margin: 5px;
-    background-color: #e6e6e6;
+    background-color: black;
     max-height: 450px;
     min-height: 450px;
     border: 1px solid #616060;
@@ -600,14 +601,14 @@ background-color:#ccc;
     position: absolute;
     bottom: 0;
     height: 50px;
-    background-color: #e6e6e6;
+    background-color: black;
     width: 100%;
 }
 
 .controllers button {
-    border: 1px solid #E7E7E7;
-    background-color: #e6e6e6;
-    color: #777;
+    border: 1px solid #666;
+    background-color: black;
+    color: #cccccc;
     height: 40px;
     width: 40px;
     border-radius: 50%;
@@ -621,9 +622,9 @@ background-color:#ccc;
 
 .controllers button:focus {
     box-shadow: 1px 0px 7px #4C4C4C;
-    border-color: #2ecc71;
+    border-color: #fff;
     color: #2ecc71;
-    background-color: #FFF;
+    background-color: black;
 }
 
 .btnPlay:after {
@@ -653,11 +654,14 @@ content: "\f028";
     height: 350px;
     width: 350px;
     position: absolute;
-    background-color: #FFF;
-    border: 1px solid #616060;
+    background-color: black;
+    border: 1px solid red;
     top: 27.5px;
     right: 40px;
     z-index: 11;
+}
+#textAds {
+    padding: 25px 20px;
 }
 .bigplay {
     height: 150px;
@@ -786,7 +790,7 @@ content: "\f028";
 
 .loading {
     width: 100%;
-    background-color: #e6e6e6;
+    background-color: black;
     height: 405px;
     position: absolute;
     top: 0;
