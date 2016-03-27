@@ -829,6 +829,7 @@ ul.speedcnt li {
     text-align: center;
     font-family: 'verdana', tahoma , serif;
     font-size: 13px;
+    color: #FFF;
     padding: 5px 20px;
     cursor: pointer;
     display: block;
@@ -840,7 +841,7 @@ ul.speedcnt li:last-child {
 }
 
 ul.speedcnt li.selected {
-    background-color: rgba(255, 141, 0, 0.6);
+    background-color: #2ecc71;
 }
 
 
