@@ -38,6 +38,7 @@
 
     
     <script src="js/grayscale.js"></script>
+    <script src="js/notifIcon.js"></script>
 
     
 
@@ -81,11 +82,13 @@
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
                     <i class="fa fa-bars"></i>
                 </button>
-                  
-                <a class="navbar-brand page-scroll" href="#page-top">
-                    <i></i>  <span class="light"><img src="../img/logo.png" alt="logo" height="32" width="32"></span> Together.Video
-                </a>
-                
+                 <div>
+                       
+                 </div>
+                    <a class="navbar-brand page-scroll" href="#page-top">
+                         Together<i class="fa fa-play-circle"></i>Video
+                    </a>
+               
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -100,6 +103,19 @@
                         <li class="hidden">
                             <a href="#page-top"></a>
                         </li>
+                        <li class="aschild">
+                             
+                                <button onclick="myFunction()" id="notif-icon">
+                                <div >
+                                   
+                                   <div class="notif-number"> 
+                                        <p>8</p>
+                                   </div> 
+
+                                </div></button>
+                           
+                         </li>
+
                         <li class="">
                             <a class="page-scroll" href="#about">About</a>
                         </li>
@@ -208,7 +224,7 @@
                    </div>
               
             </div>
-            <div class="bigplay" title="play the video"><img src="../img/logo.png" alt="logo" height="150" width="150"></div>
+            <div class="bigplay" title="play the video"><img src="../img/logoPlay.png" alt="logo" height="150" width="150"></div>
             <div class="loading"><i class="fa fa-spinner fa-spin"></i></div>
                 </div>
 

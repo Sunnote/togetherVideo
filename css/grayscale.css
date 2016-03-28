@@ -78,8 +78,8 @@ a:focus {
 }
 
 .navbar-custom .navbar-brand {
-    padding: 8px 6px;
-    font-size: 16px;
+    padding: 16px 6px;
+    font-size: 20px;
     color: #2ecc71;
 }
 
@@ -845,6 +845,33 @@ ul.speedcnt li.selected {
 }
 
 
+#notif-icon {
+  
+    background-image :url(logoNumber.png);
+    background-size: 50px 50px;
+    background-repeat: no-repeat;
 
+    width: 60px;
+    height:55px;
+    position: relative;
 
+   
+}
+.notif-number{
+    width: 30px;
+    height: auto;
+    margin: 0 auto;
+    color: red !important;
+    font-size: 14px;
+    position: relative;
+    padding: 5px;
+    padding-right: 12px;
+   
+    
+    
+}
+.notif-number p{
+  font-size: 150%;
+    
+}
 
