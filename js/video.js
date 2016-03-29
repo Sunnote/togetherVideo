@@ -210,11 +210,18 @@ $("a.link").on("click" , function  (event) {
 //Change from Red to Green when press hold
 
 
-   $('.btnPressHold').mouseup(function(e) {
-        //var btnPressHoldGreen = $(".btnPressHoldGreen");
-        $(this).toggleClass('btnPressHoldGreen');
-   e.stopPropagation();
-   });  
+  $(".btnPressHold").mouseup(function(){
+        //$(".crop_list").append("<li>Record End: "+$(".current").html()+"</li>");
+  $(".PressHoldMessage").html("Crop End: "+$(".current").html()+" ");
+  $(this).removeClass('btnPressHoldGreen');
+    });
+    $(".btnPressHold").mousedown(function(){
+        //$(".crop_list").append("<li>Record Start: "+$(".current").html()+"</li>");
+  $(".PressHoldMessage").html("Crop Start: "+$(".current").html()+" ");
+  $(this).addClass('btnPressHoldGreen');
+    });
+
+// 
 
     //VOLUME BAR
     //volume bar event
