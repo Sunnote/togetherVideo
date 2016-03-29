@@ -630,7 +630,7 @@ background-color:#ccc;
     background-color: red !important;
 }
 .btnPressHoldGreen{
-    background-color: green;
+    background-color: green !important;
 }
 .PressHoldMessage{
     float: left;
