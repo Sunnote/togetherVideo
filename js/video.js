@@ -210,7 +210,7 @@ $("a.link").on("click" , function  (event) {
 //Change from Red to Green when press hold
 
 
-   $('.btnPressHold').mousedown(function(e) {
+   $('.btnPressHold').mouseup(function(e) {
         //var btnPressHoldGreen = $(".btnPressHoldGreen");
         $(this).toggleClass('btnPressHoldGreen');
    e.stopPropagation();
