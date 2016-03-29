@@ -205,9 +205,16 @@ $("a.link").on("click" , function  (event) {
     e.stopPropagation();
    });
 
-//notif-icon btn click
 
-   
+
+//Change from Red to Green when press hold
+
+
+   $('.btnPressHold').click(function(e) {
+        //var btnPressHoldGreen = $(".btnPressHoldGreen");
+        $(this).toggleClass('btnPressHoldGreen');
+   e.stopPropagation();
+   });  
 
     //VOLUME BAR
     //volume bar event

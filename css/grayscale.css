@@ -629,6 +629,9 @@ background-color:#ccc;
 .btnPressHold{
     background-color: red !important;
 }
+.btnPressHoldGreen{
+    background-color: green;
+}
 .PressHoldMessage{
     float: left;
     padding: 15px;
