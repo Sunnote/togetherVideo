@@ -212,7 +212,7 @@ $("a.link").on("click" , function  (event) {
 
   $(".btnPressHold").mouseup(function(){
         //$(".crop_list").append("<li>Record End: "+$(".current").html()+"</li>");
-  $(".PressHoldMessage").html("Crop End: "+$(".current").html()+" ");
+  $(".PressHoldMessage").append(" Crop End: "+$(".current").html()+" ");
   $(this).removeClass('btnPressHoldGreen');
     });
     $(".btnPressHold").mousedown(function(){
