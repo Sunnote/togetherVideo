@@ -8,7 +8,7 @@
 $(document).ready(function()
 
 {
-    var vid = $('#myvid');
+    var vid = $('.myvid');
 
     //default video source
     $(vid).attr("src", $("a.link:first").attr("href"));
@@ -130,8 +130,8 @@ $("a.link").on("click" , function  (event) {
 
 //CONTROLS EVENTS
     //video screen and play button clicked
-    vid.on('click', function() { playpause(); } );
-    $('.btnPlay').on('click', function() { playpause(); } );
+    vid.on('click', function(e) { playpause(); } );
+    $('.btnPlay').on('click', function(e) { playpause(); } );
     var playpause = function() {
         if(vid[0].paused || vid[0].ended) {
             $('.btnPlay').addClass('paused');
@@ -141,6 +141,8 @@ $("a.link").on("click" , function  (event) {
             $('.btnPlay').removeClass('paused');
             vid[0].pause();
         }
+
+        e.stopPropagation();
     };
 
         //VIDEO PROGRESS BAR
@@ -180,7 +182,7 @@ $("a.link").on("click" , function  (event) {
         vid[0].currentTime = maxduration * percentage / 100;
     };
 //sound button clicked
-    $('.sound').click(function() {
+    $('.sound').click(function(e) {
         vid[0].muted = !vid[0].muted;
         $(this).toggleClass('muted');
         if(vid[0].muted) {
@@ -189,7 +191,23 @@ $("a.link").on("click" , function  (event) {
         else{
             $('.volumeBar').css('width', vid[0].volume*100+'%');
         }
+        e.stopPropagation();
     });
+
+
+//PressHold button click
+
+
+
+   $('.btnPressHold').click(function(e) {
+      $('#output').html(function(i, val) { return val*1+1 });
+
+    e.stopPropagation();
+   });
+
+//notif-icon btn click
+
+   
 
     //VOLUME BAR
     //volume bar event
@@ -205,11 +223,13 @@ $("a.link").on("click" , function  (event) {
             volumeDrag = false;
             updateVolume(e.pageX);
         }
+        e.stopPropagation();
     });
     $(document).on('mousemove', function(e) {
         if(volumeDrag) {
             updateVolume(e.pageX);
         }
+        e.stopPropagation();
     });
     var updateVolume = function(x, vol) {
         var volume = $('.volume');
@@ -249,9 +269,9 @@ $("a.link").on("click" , function  (event) {
     };
 
     //speed text clicked
-    $('.spdx50').on('click', function() { fastfowrd(this, 1.5); });
-    $('.spdx25').on('click', function() { fastfowrd(this, 1.25); });
-    $('.spdx1').on('click', function() { fastfowrd(this, 1); });
+    $('.spdx50').on('click', function(e) { fastfowrd(this, 1.5); });
+    $('.spdx25').on('click', function(e) { fastfowrd(this, 1.25); });
+    $('.spdx1').on('click', function(e) { fastfowrd(this, 1); });
     $('.spdx050').on('click', function() { fastfowrd(this, 0.5); });
     var fastfowrd = function(obj, spd) {
         $('.speedcnt li').removeClass('selected');
@@ -261,13 +281,13 @@ $("a.link").on("click" , function  (event) {
         $("ul.speedcnt").fadeOut("fast");
         $('.btnPlay').addClass('paused');
     };
-    $(".btnspeed").click( function() {
+    $(".btnspeed").click( function(e) {
         
         $("ul.speedcnt").slideToggle(100);
     });
 
     //fullscreen button clicked
-    $('.btnFS').on('click', function() {
+    $('.btnFS').on('click', function(e) {
         if($.isFunction(vid[0].webkitEnterFullscreen)) {
             vid[0].webkitEnterFullscreen();
         }   
@@ -277,10 +297,11 @@ $("a.link").on("click" , function  (event) {
         else {
             alert('Your browsers doesn\'t support fullscreen');
         }
+        e.stopPropagation();
     });
     
     //light bulb button clicked
-    $('.btnLight').click(function() {
+    $('.btnLight').click(function(e) {
         $(this).toggleClass('lighton');
         
         //if lightoff, create an overlay
@@ -304,6 +325,7 @@ $("a.link").on("click" , function  (event) {
         else {
             $('.overlay').remove();
         }
+        e.stopPropagation();
     });
 
 //hide pause button if video onplaying
@@ -311,7 +333,7 @@ $("a.link").on("click" , function  (event) {
 
 
 //previous video button
-$(".prevvid").click(function(){
+$(".prevvid").click(function(e){
     $(vid).attr("src", $(".playing").prev().attr("href"));
     vid[0].play();
     $(".playing").prev().addClass("playing");
@@ -323,10 +345,11 @@ $(".prevvid").click(function(){
     }else {
     $(this).removeClass("disabled");
     };
+    e.stopPropagation();
 });
 
 //previous video button
-$(".nextvid").click(function(){
+$(".nextvid").click(function(e){
     $(vid).attr("src", $(".playing").next().attr("href"));
     vid[0].play();
     $(".playing").next().addClass("playing");
@@ -338,7 +361,7 @@ $(".nextvid").click(function(){
     }else {
     $(this).removeClass("disabled");
     };
-    
+    e.stopPropagation();
 });
 
 
