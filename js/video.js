@@ -207,7 +207,7 @@ $("a.link").on("click" , function  (event) {
 
 
 
-//Change from Red to Green when press hold
+//Change from Red to Green and show crop time
 
 
   $(".btnPressHold").mouseup(function(){
@@ -215,7 +215,7 @@ $("a.link").on("click" , function  (event) {
   $(".PressHoldMessage").append(" Crop End: "+$(".current").html()+" ");
   $(this).removeClass('btnPressHoldGreen');
     });
-    $(".btnPressHold").mousedown(function(){
+  $(".btnPressHold").mousedown(function(){
         //$(".crop_list").append("<li>Record Start: "+$(".current").html()+"</li>");
   $(".PressHoldMessage").html("Crop Start: "+$(".current").html()+" ");
   $(this).addClass('btnPressHoldGreen');
