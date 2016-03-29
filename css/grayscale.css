@@ -626,6 +626,14 @@ background-color:#ccc;
     color: #2ecc71;
     background-color: black;
 }
+.btnPressHold{
+    background-color: red !important;
+}
+.PressHoldMessage{
+    float: left;
+    padding: 15px;
+}
+
 
 .btnPlay:after {
     content: "\f04b";
@@ -860,18 +868,17 @@ ul.speedcnt li.selected {
 .notif-number{
     width: 30px;
     height: auto;
-    margin: 0 auto;
-    color: red !important;
+    margin: 6 0 auto;
+    color: red;
     font-size: 14px;
     position: relative;
-    padding: 5px;
-    padding-right: 12px;
-   
+    padding: 10px;
+  
+   padding-right: 20px;
     
     
 }
-.notif-number p{
-  font-size: 150%;
+.
     
 }
 
