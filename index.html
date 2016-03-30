@@ -54,10 +54,8 @@
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
   ga('create', 'UA-75433033-1', 'auto');
   ga('send', 'pageview');
-
 </script>
 
  <!--Sharethis.com codes-->
@@ -67,7 +65,6 @@
 <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
 <script type="text/javascript" src="http://s.sharethis.com/loader.js"></script>
 <script src='js/main.js'></script>
-
 
 </head>
 
@@ -105,12 +102,15 @@
                                 <button id="notif-icon" onclick = "myFunction()"type="button">
                              
                                    
-                                   <div id="output" class="notif-number"> 
+                                   <div id="output" class="notif-number play_teaser"> 
                                         0
                                   
 
                                 </div>
                                </button>
+
+                               
+                               <input type="hidden" id="teaser_list" value="">
                          </li>
 
                         <li class="">
@@ -186,7 +186,8 @@
                                 <span class="bufferBar"></span>
                                 <span class="timeBar"></span>
                             </div>
-                            <div class="time">
+                            <div style="clear:both;"></div>
+                            <div class="time" style="color:#fff;">
                                 <span class="current"></span> / 
                                 <span class="duration"></span> 
                             </div>
@@ -196,6 +197,7 @@
                 <button class="btnPlay" title="Play/Pause video"></button>
                 <button class="prevvid disabled" title="Previous video"><i class="fa fa-step-forward fa-rotate-180"></i></button>
                 <button class="nextvid" title="Next video"><i class="fa fa-step-forward"></i></button>
+
                 <button class="sound sound2 btn" title="Mute/Unmute sound"></button>
                 <div class="volume" title="Set volume">
                         <span class="volumeBar"></span>
@@ -225,38 +227,34 @@
                    </div>
               
             </div>
-            <div class="bigplay" title="play the video"><img src="../img/logoPlay.png" alt="logo" height="100" width="100"></div>
+            <div class="bigplay" title="play the video"><img src="img/logoPlay.png" alt="logo" height="100" width="100"></div>
             <div class="loading"><i class="fa fa-spinner fa-spin"></i></div>
                 </div>
 
                 <div class="videolist">
                     <nav class="vids">
-                        <a class="link" href="http://download.wavetlan.com/SVV/Media/HTTP/MP4/ConvertedFiles/Media-Convert/Unsupported/dw11222.mp4">About</a>
+                        <a class="link" href="http://download.wavetlan.com/SVV/Media/HTTP/MP4/ConvertedFiles/Media-Convert/Unsupported/dw11222.mp4">Search result1</a>
 
-                        <a class="link" href="http://download.wavetlan.com/SVV/Media/HTTP/H264/Other_Media/H264_test8_voiceclip_mp4_480x320.mp4">Dual-stream Cam</a>
+                        <a class="link" href="http://download.wavetlan.com/SVV/Media/HTTP/H264/Other_Media/H264_test8_voiceclip_mp4_480x320.mp4">Search result2</a>
 
-                        <a class="link" href="http://download.wavetlan.com/SVV/Media/HTTP/MP4/ConvertedFiles/Media-Convert/Unsupported/test7.mp4">Suport TV App</a>
+                        <a class="link" href="http://download.wavetlan.com/SVV/Media/HTTP/MP4/ConvertedFiles/Media-Convert/Unsupported/test7.mp4">Search result3</a>
 
-                        <a class="link" href="http://download.wavetlan.com/SVV/Media/HTTP/MP4/ConvertedFiles/Media-Convert/Unsupported/test7.mp4">How to 1</a>
+                        <a class="link" href="http://download.wavetlan.com/SVV/Media/HTTP/MP4/ConvertedFiles/Media-Convert/Unsupported/test7.mp4">Search result4</a>
 
-                        <a class="link" href="http://download.wavetlan.com/SVV/Media/HTTP/H264/Other_Media/H264_test5_voice_mp4_480x360.mp4">How to 2</a>
+                        <a class="link" href="http://download.wavetlan.com/SVV/Media/HTTP/H264/Other_Media/H264_test5_voice_mp4_480x360.mp4?t=120s,121.5s">Search result5</a>
 
-                        <a class="link" href="http://download.wavetlan.com/SVV/Media/HTTP/H264/Other_Media/H264_test7_voiceclip_mp4_480x360.mp4">How to 3</a>
+                        <a class="link" href="http://download.wavetlan.com/SVV/Media/HTTP/H264/Other_Media/H264_test7_voiceclip_mp4_480x360.mp4">Search result6</a>
 
-                        <a class="link" href="http://download.wavetlan.com/SVV/Media/HTTP/H264/Other_Media/H264_test8_voiceclip_mp4_480x320.mp4">How to 4</a>
+                        <a class="link" href="http://download.wavetlan.com/SVV/Media/HTTP/H264/Other_Media/H264_test8_voiceclip_mp4_480x320.mp4">Search result7</a>
 
-                        <a class="link" href="http://download.wavetlan.com/SVV/Media/HTTP/MP4/ConvertedFiles/Media-Convert/Unsupported/dw11222.mp4">How to 5</a>
-                         <a class="link" href="http://download.wavetlan.com/SVV/Media/HTTP/MP4/ConvertedFiles/Media-Convert/Unsupported/test7.mp4">How to 6</a>
+                        <a class="link" href="http://download.wavetlan.com/SVV/Media/HTTP/MP4/ConvertedFiles/Media-Convert/Unsupported/dw11222.mp4">Search result8</a>
+                         <a class="link" href="http://download.wavetlan.com/SVV/Media/HTTP/MP4/ConvertedFiles/Media-Convert/Unsupported/test7.mp4">Search result9</a>
 
-                        <a class="link" href="http://download.wavetlan.com/SVV/Media/HTTP/H264/Other_Media/H264_test5_voice_mp4_480x360.mp4">How to 7</a>
+                        <a class="link" href="http://download.wavetlan.com/SVV/Media/HTTP/H264/Other_Media/H264_test5_voice_mp4_480x360.mp4">Search result10</a>
 
-                        <a class="link" href="http://download.wavetlan.com/SVV/Media/HTTP/H264/Other_Media/H264_test7_voiceclip_mp4_480x360.mp4">How to 8</a>
+                        <a class="link" href="http://download.wavetlan.com/SVV/Media/HTTP/H264/Other_Media/H264_test7_voiceclip_mp4_480x360.mp4">Search result11</a>
 
-                        <a class="link" href="http://download.wavetlan.com/SVV/Media/HTTP/H264/Other_Media/H264_test8_voiceclip_mp4_480x320.mp4">How to 9</a>
-
-                        <a class="link" href="http://download.wavetlan.com/SVV/Media/HTTP/MP4/ConvertedFiles/Media-Convert/Unsupported/dw11222.mp4">How to 10</a>
-
-                        <a class="link" href="http://download.wavetlan.com/SVV/Media/HTTP/MP4/ConvertedFiles/Media-Convert/Unsupported/test7.mp4">Project update</a>
+                        <a class="link" href="http://download.wavetlan.com/SVV/Media/HTTP/H264/Other_Media/H264_test8_voiceclip_mp4_480x320.mp4">Search result12</a>
                     </nav>
                 </div>
          </div>
@@ -278,9 +276,9 @@
                 <div class="download-section">
                     <div class="container">
                         <div class="col-lg-8 col-lg-offset-2">
-                            <h2>Dual-stream Camera App is now available to download</h2>
+                            <h2>Dual-stream Camera App</h2>
                             <p>Dual-stream Camera creates two video outputs in a single capture, so you can shoot more videos with little device storage space left. Just simply touch on screen while shooting to highlight and save the abstract version to your device, the full version will be automatically uploaded to a cloud storage for uninterrupted video capturing experience .</p>
-                            <a href="https://play.google.com/store/apps/details?id=video.together.camera" class="btn btn-default btn-lg">Download App</a>
+                            <a href="https://play.google.com/store/apps/details?id=com.spirority.viiz.tool.camera" class="btn btn-default btn-lg">Download App</a>
                         </div>
                     </div>
                 </div>
@@ -292,7 +290,7 @@
                       <p>The engineering team has developed a video editing tool for supporters. The tool helps you to view and edit videos on device beside capture and upload videos using the dual-stream camera.</p>
                       <p> Thank You for Your Support Together Video Foundation!</p>
 
-                            <a href="https://play.google.com/store/apps/details?id=video.together.highlighter" class="btn btn-default btn-lg">Download App</a>
+                            <a href="https://play.google.com/store/apps/details?id=com.spirority.viiz.tool" class="btn btn-default btn-lg">Download App</a>
                         
                        
                        

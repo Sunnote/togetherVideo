@@ -5,8 +5,14 @@
 */
 
 
-$(document).ready(function()
+/* nice mp4 video playlist with jQuery 
+   created by: Menni Mehdi
+   in : 23/01/2016
+   license : if you like it use it
+*/
 
+
+$(document).ready(function()
 {
     var vid = $('.myvid');
 
@@ -206,22 +212,35 @@ $("a.link").on("click" , function  (event) {
    });
 
 
+$('.btnPressHold').click(function(e) {
+        //var btnPressHoldGreen = $(".btnPressHoldGreen");
+        $(this).toggleClass('btnPressHoldGreen');
+   e.stopPropagation();
+   });
+   
+   
 
-//Change from Red to Green and show crop time
-
-
-  $(".btnPressHold").mouseup(function(){
+    $(".btnPressHold").mouseup(function(){
+        var crop_end = $(".current").html();
         //$(".crop_list").append("<li>Record End: "+$(".current").html()+"</li>");
-  $(".PressHoldMessage").append(" Crop End: "+$(".current").html()+" ");
-  $(this).removeClass('btnPressHoldGreen');
+        $(".PressHoldMessage").append(" Crop End: "+crop_end+" ");
+        $(this).removeClass('btnPressHoldGreen');
+        $("#teaser_list").val($("#teaser_list").val()+"#"+crop_end);
     });
-  $(".btnPressHold").mousedown(function(){
+    $(".btnPressHold").mousedown(function(){
+        var crop_start = $(".current").html();
         //$(".crop_list").append("<li>Record Start: "+$(".current").html()+"</li>");
-  $(".PressHoldMessage").html("Crop Start: "+$(".current").html()+" ");
-  $(this).addClass('btnPressHoldGreen');
+        $(".PressHoldMessage").html("Crop Start: "+crop_start+" ");
+        $(this).addClass('btnPressHoldGreen');
+        $("#teaser_list").val($("#teaser_list").val()+"|"+$(vid).attr("src")+"#"+crop_start);
+        
     });
+    
 
-// 
+    
+//notif-icon btn click
+
+   
 
     //VOLUME BAR
     //volume bar event
@@ -392,4 +411,72 @@ $(".closeme , .bigplay").click(function(){
         $('.btnPlay').addClass('paused');
     });
 //end
+
+$(".play_teaser").click(function(e) {
+    //playVideoTeaserFrom(10,40);
+    
+    var teaser_list = $("#teaser_list").val().split("|");
+    var clip_src = Array();
+    var clip_start = Array();
+    var clip_end = Array();
+    for(var i=0; i<teaser_list.length; i++)
+    {
+        if(teaser_list[i]!="")
+        {
+            var clip_info = teaser_list[i].split("#");
+            clip_src.push(clip_info[0]);
+            var start_time_arr = clip_info[1].split(":");
+            clip_start.push( parseInt(start_time_arr[0])*60+parseInt(start_time_arr[1]) );
+            
+            var end_time_arr = clip_info[2].split(":");
+            clip_end.push( parseInt(end_time_arr[0])*60+parseInt(end_time_arr[1]) );
+        }
+    }
+    
+    
+    playVideoTeaserFromRecursive (clip_src, clip_start, clip_end, 0);
+    
+    
 });
+
+
+
+});
+
+function playVideoTeaserFromRecursive (clip_src, clip_start, clip_end, counter) {
+       var videoplayer = $('.myvid');  //get your videoplayer
+       
+        if(clip_start[counter]){
+            $(videoplayer).attr("src",clip_src[counter]);
+       videoplayer[0].currentTime = clip_start[counter]; //not sure if player seeks to seconds or milliseconds
+       videoplayer[0].play();
+
+       //call function to stop player after given intervall
+       var stopVideoAfter = (clip_end[counter] - clip_start[counter]) * 1000;  //* 1000, because Timer is in ms
+       setTimeout(function(){
+           //videoplayer[0].pause();
+           return playVideoTeaserFromRecursive(clip_src, clip_start, clip_end, counter+1);
+       }, stopVideoAfter);
+       }
+       else
+       {
+         videoplayer[0].pause();  
+         }
+   }
+   
+   
+
+function playVideoTeaserFrom (startTime, endTime) {
+       var videoplayer = $('.myvid');  //get your videoplayer
+
+       videoplayer[0].currentTime = startTime; //not sure if player seeks to seconds or milliseconds
+       videoplayer[0].play();
+
+       //call function to stop player after given intervall
+       var stopVideoAfter = (endTime - startTime) * 1000;  //* 1000, because Timer is in ms
+       setTimeout(function(){
+           videoplayer[0].pause();
+       }, stopVideoAfter);
+
+   }
+
