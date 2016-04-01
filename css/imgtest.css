@@ -165,7 +165,7 @@ body {
 }
 
 footer {
-  background-image: url("/img/backgroundtop.jpg");
+  background-image: url("img/backgroundfooter.jpg");
   background-size: 100%;
   background-repeat: no-repeat;
   padding: .5em;
